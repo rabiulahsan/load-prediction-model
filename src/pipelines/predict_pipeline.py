@@ -10,8 +10,8 @@ class PredictPipeline:
 
     def predict_approval(self, features):
         try:
-            model_path = 'artifacts/clf_models/GradientBoostingClassifier_model.pkl'
-            preprocessor_path = 'artifacts/preprocessor.pkl'
+            model_path = 'models/GradientBoostingClassifier_model.pkl'
+            preprocessor_path = 'models/preprocessor.pkl'
 
             model = load_object(file_path=model_path)
             preprocessor = load_object(file_path=preprocessor_path)
@@ -33,8 +33,8 @@ class PredictPipeline:
 
     def predict_loan_amount(self, features):
         try:
-            model_path = 'artifacts/reg_models/GradientBoostingRegressor_model.pkl'
-            preprocessor_path = 'artifacts/preprocessor.pkl'
+            model_path = 'models/GradientBoostingRegressor_model.pkl'
+            preprocessor_path = 'models/preprocessor.pkl'
 
             model = load_object(file_path=model_path)
             preprocessor = load_object(file_path=preprocessor_path)
