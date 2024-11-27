@@ -1,0 +1,14 @@
+numpy
+matplotlib
+seaborn
+pandas
+scikit-learn
+dill
+xgboost
+catboost
+flask
+flask-cors
+werkzeug==2.0.3
+
+gunicorn
+-e .
