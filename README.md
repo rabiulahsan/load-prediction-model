@@ -1,1 +1,1 @@
-## this is laon amount prediction app
+## this is loan amount prediction app
