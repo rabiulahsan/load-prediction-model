@@ -25,7 +25,7 @@ def age_category(age):
 # Route for a home page
 @app.route('/')
 def index():
-    return jsonify({"message": "Welcome to the Loan Eligibility Prediction API!"})
+    return jsonify({"message": "Welcome to the Loan Eligibility Prediction API! Using GitHub Action as a CiCd tool with Render."})
 
 # Route for making predictions
 @app.route('/predictdata', methods=['POST'])
