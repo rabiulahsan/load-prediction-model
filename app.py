@@ -61,7 +61,9 @@ def predictdata():
 
         # Return the result as a JSON response
         if(classification_result[0] == 1):
+            #getting predicted loan amount
             loan_amount_result = predict_pipeline.predict_loan_amount(pred_df)
+            #getting requested loan amount
             loan_amount_req =  int(data.get('loan_amount_request'))
             print(loan_amount_req)
                 
